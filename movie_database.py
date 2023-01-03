@@ -109,4 +109,13 @@ def top_titles():
     by_titles = sorted(list, key = lambda _displays : _displays.displays)
     for i in range(0,3):
         print(f"{i+1}. {by_titles[i]}")
-    return print('')       
+    return print('')
+
+if __name__ == '__main__':
+    print("|Biblioteka filmów|\n")
+    get_movie()
+    get_series()
+    multiply_generate_views()
+    print(f"Najpopularniejsze filmy i seriale dnia {date.today(): %d.%m.%Y}:")
+    top_titles()
+    search()       
